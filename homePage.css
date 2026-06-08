@@ -1,0 +1,92 @@
+/* !--css for the top banner style--! */
+
+menu.topBanner {
+  display: grid;
+  grid-template: repeat(5, auto-fit) / repeat(1, 1fr);
+  justify-self: center;
+  justify-items: center;
+  min-width: 95vw;
+  gap: 0.25rem;
+}
+
+h1 {
+  margin: 0;
+}
+
+/* !--css for main page content--! */
+
+main {
+  max-width: 80vw;
+  justify-items: center;
+  justify-self: center;
+}
+
+/* !--css for intro card--! */
+
+.introDescription {
+  display: grid;
+  grid-template: repeat(auto, 1fr) / repeat(1, 1fr);
+  justify-items: center;
+  max-width: 90%;
+
+  .introText {
+    margin-top: 0.5rem;
+  }
+
+  h1 {
+    color: #520004;
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 0.9rem;
+  }
+  img {
+    max-width: 100%;
+    grid-area: 1 / 1 / 2 / 2;
+    border-radius: 50px;
+    border: 2px solid #233329;
+  }
+}
+
+/* !--css for screen expansion--! */
+
+@media (width > 600px) {
+  /* !--top banner--! */
+
+  main {
+    align-content: center;
+  }
+  menu.topBanner {
+    display: grid;
+    grid-template: repeat(1, minmax(10vh, auto)) / repeat(10, 1fr);
+    align-items: center;
+    padding: 0;
+    margin: 0 1rem;
+
+    h1 {
+      grid-area: 1 / 1 / 2 / -5;
+      justify-self: left;
+    }
+  }
+
+  /* !--main content--! */
+
+  /* !--intro card--! */
+
+  .introDescription {
+    grid-template: repeat(1, auto) / repeat(2, 1fr);
+    max-width: 500px;
+
+    .introText {
+      grid-area: 1 / 1 / 2 / 2;
+      margin-right: 0.75rem;
+    }
+
+    img {
+      max-width: 100%;
+      max-height: 350px;
+      grid-area: 1 / 2 / span 2 / 3;
+    }
+  }
+}

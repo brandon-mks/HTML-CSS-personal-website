@@ -1,0 +1,49 @@
+/* !--CSS document for general site-wide styles--! */
+
+body {
+  margin: 0;
+  background-color: #ffe2c2;
+  overflow-x: hidden;
+  color: #2d1b11;
+  font-family: "Paprika", system-ui;
+}
+
+header,
+footer {
+  background-color: #2d1b11;
+  border: 1px solid #2d1b11;
+  color: #ffecd6;
+  justify-items: center;
+
+  h1 {
+    font-family: "Rock 3D", sans-serif;
+  }
+
+  a {
+    text-decoration-line: none;
+    color: #ffecd6;
+    padding: 0.25rem;
+    font-size: 0.85rem;
+  }
+
+  a:hover {
+    background-color: #684027;
+    border-radius: 3px;
+  }
+}
+
+header {
+  margin-bottom: 1rem;
+}
+
+footer {
+  margin-top: 1rem;
+}
+
+main {
+  min-height: 80.4vh;
+}
+
+menu {
+  list-style-type: none;
+}
