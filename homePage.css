@@ -1,24 +1,7 @@
 /* !--css for the top banner style--! */
 
-menu.topBanner {
-  display: grid;
-  grid-template: repeat(5, auto-fit) / repeat(1, 1fr);
-  justify-self: center;
-  justify-items: center;
-  min-width: 95vw;
-  gap: 0.25rem;
-}
-
 h1 {
   margin: 0;
-}
-
-/* !--css for main page content--! */
-
-main {
-  max-width: 80vw;
-  justify-items: center;
-  justify-self: center;
 }
 
 /* !--css for intro card--! */
@@ -53,26 +36,6 @@ main {
 /* !--css for screen expansion--! */
 
 @media (width > 600px) {
-  /* !--top banner--! */
-
-  main {
-    align-content: center;
-  }
-  menu.topBanner {
-    display: grid;
-    grid-template: repeat(1, minmax(10vh, auto)) / repeat(10, 1fr);
-    align-items: center;
-    padding: 0;
-    margin: 0 1rem;
-
-    h1 {
-      grid-area: 1 / 1 / 2 / -5;
-      justify-self: left;
-    }
-  }
-
-  /* !--main content--! */
-
   /* !--intro card--! */
 
   .introDescription {
