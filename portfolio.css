@@ -14,8 +14,7 @@ h1 {
   border: 2px solid #233329;
   text-align: center;
 
-  p,
-  img {
+  p {
     margin-left: 0.5rem;
     margin-right: 0.5rem;
   }
