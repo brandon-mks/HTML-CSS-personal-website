@@ -1,0 +1,15 @@
+main {
+  text-align: center;
+  min-height: 66.6vh;
+  border: 1px solid black;
+
+  h2 {
+    justify-self: right;
+  }
+}
+
+@media (width > 600px) {
+  main {
+    min-height: 79.6vh;
+  }
+}

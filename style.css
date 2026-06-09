@@ -17,6 +17,7 @@ footer {
 
   h1 {
     font-family: "Rock 3D", sans-serif;
+    margin-top: 0;
   }
 
   a {
@@ -40,10 +41,43 @@ footer {
   margin-top: 1rem;
 }
 
+menu.topBanner {
+  display: grid;
+  grid-template: repeat(5, auto-fit) / repeat(1, 1fr);
+  justify-self: center;
+  justify-items: center;
+  min-width: 75vw;
+  max-width: 95vw;
+  gap: 0.25rem;
+}
+
 main {
-  min-height: 80.4vh;
+  min-height: 79vh;
+  max-width: 80vw;
+  justify-items: center;
+  justify-self: center;
 }
 
 menu {
   list-style-type: none;
+}
+
+/* !--css for screen expansion--! */
+@media (width > 600px) {
+  menu.topBanner {
+    display: grid;
+    grid-template: repeat(1, minmax(10vh, auto)) / repeat(10, 1fr);
+    align-items: center;
+    padding: 0;
+    margin: 0 1rem;
+  }
+  h1 {
+    grid-area: 1 / 1 / 2 / -5;
+    justify-self: left;
+  }
+
+  main {
+    align-content: center;
+    min-height: 79.8vh;
+  }
 }

@@ -1,6 +1,14 @@
+button {
+  margin-top: 0.5rem;
+  width: 100%;
+}
+
 main {
-  text-align: center;
   min-height: 66.3vh;
+}
+
+h1 {
+  font-family: "Rampart One", serif;
 }
 
 @media (width > 600px) {
